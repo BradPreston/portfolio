@@ -1,0 +1,61 @@
+// text color
+$main-color: #ff9934;
+$main-light: #ffa64e;
+$main-lighter: #ffb76f;
+$main-dark: #ff8b1a;
+$main-darker: #ff7f00;
+
+// color overrides
+$black: #333333;
+$white: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $black;
+    margin: 0 auto;
+}
+
+h1 {
+    color: $main-color;
+    font-weight: 100;
+    font-size: 3rem;
+
+    @media only screen and (min-width: 481px) {
+        font-size: 4rem;
+    }
+
+    @media only screen and (min-width: 769px) {
+        font-size: 6rem;
+    }
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 1.6rem;
+
+    @media only screen and (min-width: 481px){
+        font-size: 2rem;
+    }
+
+    @media only screen and (min-width: 769px) {
+        font-size: 3rem;
+    }
+}
+
+.wrapper {
+    height: calc(100vh - 90px);
+    width: 100vw;
+    margin-top: 50px;
+}
+
