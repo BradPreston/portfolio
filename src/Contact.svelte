@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Contact</title>
+</svelte:head>
+
 <div class="wrapper">
     <main>
         <h1>Contact</h1>

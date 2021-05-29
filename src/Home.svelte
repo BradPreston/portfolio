@@ -2,6 +2,10 @@
     import { c } from './stores.js';
 </script>
 
+<svelte:head>
+    <title>Home</title>
+</svelte:head>
+
 <div class="wrapper">
     <main>
         <section>
