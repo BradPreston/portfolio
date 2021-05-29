@@ -44,10 +44,7 @@ export default {
 				// enable run-time checks when not in production
 				dev: !production,
 			},
-			preprocess: autoPreprocess(),
-			scss: css => {
-				css.write('public/build/bundle.css');
-			},
+			preprocess: autoPreprocess()
 			
 		}),
 		// we'll extract any component CSS out into
