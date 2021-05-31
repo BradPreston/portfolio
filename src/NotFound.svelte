@@ -3,14 +3,7 @@
     
     <p>It appears the page you're looking for doesn't exist!</p>
 </div>
-<style lang="scss">
+<style type="text/scss">
     @import 'public/global.scss';
-
-    h1 {
-        margin-top: 60px;
-    }
-
-    .wrapper {
-        text-align: center;
-    }
+    @import './scss/notFound.scss';
 </style>

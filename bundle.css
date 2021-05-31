@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #ff9934;
+  font-weight: 100;
+  font-size: 3rem;
+}
+@media only screen and (min-width: 481px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+@media only screen and (min-width: 481px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+.wrapper {
+  height: calc(100vh - 90px);
+  width: 100vw;
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=bundle.css.map */

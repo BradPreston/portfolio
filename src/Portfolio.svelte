@@ -29,29 +29,5 @@
 
 <style lang="scss">
     @import 'public/global.scss';
-
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 75vw;
-        margin: 0 auto;
-        padding-bottom: 50px;
-
-        h1 {
-            margin-bottom: 20px;
-        }
-    
-        section {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            align-items: center;
-
-            @media only screen and (min-width: 769px) {
-                flex-direction: row;
-                justify-content: center;
-            }
-        }
-    }
+    @import './scss/portfolio.scss';
 </style>

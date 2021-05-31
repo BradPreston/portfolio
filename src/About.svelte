@@ -25,54 +25,7 @@
 
 
 
-<style lang='scss'>
+<style type="text/scss">
     @import 'public/global.scss';
-
-	section {
-		width: 75vw;
-		margin: 0 auto;
-		padding-top: 10px;
-		padding-bottom: 50px;
-
-		@media only screen and (min-width: 481px) and (max-width: 768px) {
-			width: 50vw;
-		}
-
-		@media only screen and (min-width: 769px) {
-			display: flex;
-			justify-content: center;
-		}
-
-		h1 {
-			border-bottom: 1px solid $main-color;
-			padding-bottom: 5px;
-			margin-bottom: 10px;
-
-			@media only screen and (min-width: 768px) and (max-width: 1279px) {
-				font-size: 4rem;
-			}
-
-			@media only screen and (min-width: 769px) {
-				border: none;
-				padding: 0;
-				margin: 0;
-			}
-		}
-
-		.my-story {
-
-			@media only screen and (min-width: 769px) {
-				width: 60%;
-				border-left: 2px solid $main-color;
-				margin-left: 20px;
-				padding-left: 20px;
-			}
-
-			p {
-				margin-bottom: 20px;
-				font-weight: 300;
-			}
-		}
-
-	}
+	@import './scss/about.scss';
 </style>
