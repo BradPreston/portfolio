@@ -45,7 +45,7 @@ const ProjectPage = () => {
               <h2>Tech stack for this project:</h2>
               <ul>
                 {project.stack?.map(tech => {
-                  return <li>{tech}</li>;
+                  return <li key={tech}>{tech}</li>;
                 })}
               </ul>
               <AnchorLink

@@ -84,11 +84,11 @@ const Home: NextPage = () => {
           <h2>My Hobbies</h2>
           <p>When I'm not sitting at my computer, you can find me:</p>
           <ul>
-            <li key={9}>Reading on the couch</li>
-            <li key={10}>Cruising on my skateboard</li>
-            <li key={11}>Hiking in the woods</li>
-            <li key={12}>Practicing Yoga</li>
-            <li key={13}>Playing guitar</li>
+            <li key={1}>Reading on the couch</li>
+            <li key={2}>Cruising on my skateboard</li>
+            <li key={3}>Hiking in the woods</li>
+            <li key={4}>Practicing Yoga</li>
+            <li key={5}>Playing guitar</li>
           </ul>
         </section>
 
@@ -145,19 +145,19 @@ const Home: NextPage = () => {
             <div className={styles.stack}>
               <h3>Preferred stack:</h3>
               <ul>
-                <li key={1}>Next JS</li>
-                <li key={2}>TypeScript</li>
-                <li key={3}>Sass</li>
-                <li key={4}>MongoDB</li>
+                <li key={6}>Next JS</li>
+                <li key={7}>TypeScript</li>
+                <li key={8}>Sass</li>
+                <li key={9}>MongoDB</li>
               </ul>
             </div>
             <div className={styles.stack}>
               <h3>Tech I've used:</h3>
               <ul>
-                <li key={5}>React</li>
-                <li key={6}>Svelte</li>
-                <li key={7}>Express JS</li>
-                <li key={8}>Node JS</li>
+                <li key={10}>React</li>
+                <li key={11}>Svelte</li>
+                <li key={12}>Express JS</li>
+                <li key={13}>Node JS</li>
                 <li key={14}>PHP</li>
                 <li key={15}>Laravel</li>
               </ul>
@@ -180,24 +180,19 @@ const Home: NextPage = () => {
               title="Link to Email"
               content="Email"
             />
-            {/* </li>
-            <li> */}
+            =
             <AnchorLink
               href="https://twitter.com/BradDoesCoding"
               target="_blank"
               title="Link to Twitter"
               content="Twitter"
             />
-            {/* </li>
-            <li> */}
             <AnchorLink
               href="https://www.linkedin.com/in/brad-preston/"
               target="_blank"
               title="Link to LinkedIn"
               content="Linkedin"
             />
-            {/* </li>
-            <li> */}
             <AnchorLink
               href="https://github.com/BradPreston"
               target="_blank"
