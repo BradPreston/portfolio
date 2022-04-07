@@ -13,7 +13,7 @@ const ProjectPage = () => {
   return (
     <div className={styles.container}>
       {Projects.map(project => {
-        if (project.name.replaceAll(' ', '-') == projectId)
+        if (project.name.replace(/-/g, ' ') == projectId)
           return (
             <main className={styles.project}>
               <Head>
