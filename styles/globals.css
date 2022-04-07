@@ -1,16 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #2b2a34;
+  color: #e0e1dd;
+  line-height: 1.5;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+.stickyHeader {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #cba72f;
+}
+
+.headerBackground {
+  width: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 69px !important;
+  background: #2b2a34;
+  background: #2b2a34;
+  z-index: 99;
+}
+
+h1 {
+  color: #cba72f;
+}
+
+@media only screen and (min-width: 481px) {
+  .projectCard {
+    width: 33%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .projectCard {
+    min-width: 300px;
+  }
 }

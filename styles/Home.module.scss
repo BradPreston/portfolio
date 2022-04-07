@@ -1,0 +1,155 @@
+@import './variables.scss';
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 640px) {
+    max-width: 440px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    max-width: 300px;
+  }
+}
+
+.main {
+  position: relative;
+  padding: 80px 0;
+
+  @media only screen and (max-width: 480px) {
+    padding: 50px 0;
+  }
+
+  h1 {
+    padding: 10px 0;
+    width: 100%;
+    // position: sticky;
+    top: 0;
+    background: #2b2a34;
+    z-index: 100;
+    cursor: pointer;
+    transition: border-bottom 0.2s ease-in-out;
+  }
+
+  ul {
+    list-style: inside;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
+
+.links {
+  display: flex;
+
+  a {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+.work {
+  position: relative;
+
+  .arrows {
+    display: none;
+  }
+
+  .projectLinks {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 480px) {
+      overflow: scroll;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .arrows {
+      display: block;
+
+      .arrow {
+        border: solid #d5635a;
+        border-width: 0 4px 4px 0;
+        display: inline-block;
+        padding: 3px;
+        background: transparent;
+        z-index: 1;
+        cursor: pointer;
+      }
+
+      .left {
+        position: absolute;
+        bottom: 100px;
+        left: -25px;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+      .right {
+        position: absolute;
+        bottom: 100px;
+        right: -25px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.tech {
+  .stackWrapper {
+    display: flex;
+    margin-bottom: 38px;
+
+    .stack:nth-child(2) {
+      margin-left: 40px;
+    }
+  }
+}
+
+.contact {
+  .contactButtons {
+    display: flex;
+    padding-top: 10px;
+    list-style: none;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .contactButtons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+
+      a {
+        width: 100%;
+      }
+    }
+  }
+}

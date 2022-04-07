@@ -1,0 +1,20 @@
+.link {
+  color: #d5635a;
+  text-decoration: none;
+  transition: all 0.2s;
+  padding: 10px 18px;
+  border: 2px solid #d5635a;
+  border-radius: 5px;
+  scroll-snap-align: start;
+  text-align: center;
+  // width: fit-content;
+
+  &:hover {
+    background: rgba(213, 99, 90, 0.25);
+    color: #e0e1dd;
+  }
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
