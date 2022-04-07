@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
-import SpotifyLink from '../components/spotify/Spotify';
 import SpotifyLinks from '../components/spotify/SpotifyLinks';
 import Projects from '../components/portfolio/Projects';
 import PortfolioProject from '../components/portfolio/PortfolioProject';
@@ -84,11 +83,11 @@ const Home: NextPage = () => {
           <h2>My Hobbies</h2>
           <p>When I'm not sitting at my computer, you can find me:</p>
           <ul>
-            <li key={1}>Reading on the couch</li>
-            <li key={2}>Cruising on my skateboard</li>
-            <li key={3}>Hiking in the woods</li>
-            <li key={4}>Practicing Yoga</li>
-            <li key={5}>Playing guitar</li>
+            <li key="reading">Reading on the couch</li>
+            <li key="skateboarding">Cruising on my skateboard</li>
+            <li key="hiking">Hiking in the woods</li>
+            <li key="yoga">Practicing Yoga</li>
+            <li key="guitar">Playing guitar</li>
           </ul>
         </section>
 
@@ -102,6 +101,7 @@ const Home: NextPage = () => {
                   title={link.title}
                   content={link.content}
                   target="_blank"
+                  key={link.title}
                 />
               );
             })}
@@ -117,6 +117,7 @@ const Home: NextPage = () => {
                   name={project.name}
                   link={`/${project.name.replaceAll(' ', '-')}`}
                   image={project.image}
+                  key={project.name}
                 />
               );
             })}
@@ -145,21 +146,21 @@ const Home: NextPage = () => {
             <div className={styles.stack}>
               <h3>Preferred stack:</h3>
               <ul>
-                <li key={6}>Next JS</li>
-                <li key={7}>TypeScript</li>
-                <li key={8}>Sass</li>
-                <li key={9}>MongoDB</li>
+                <li key="next">Next JS</li>
+                <li key="typescript">TypeScript</li>
+                <li key="sass">Sass</li>
+                <li key="mongodb">MongoDB</li>
               </ul>
             </div>
             <div className={styles.stack}>
               <h3>Tech I've used:</h3>
               <ul>
-                <li key={10}>React</li>
-                <li key={11}>Svelte</li>
-                <li key={12}>Express JS</li>
-                <li key={13}>Node JS</li>
-                <li key={14}>PHP</li>
-                <li key={15}>Laravel</li>
+                <li key="react">React</li>
+                <li key="svelte">Svelte</li>
+                <li key="express">Express JS</li>
+                <li key="node">Node JS</li>
+                <li key="php">PHP</li>
+                <li key="laravel">Laravel</li>
               </ul>
             </div>
           </div>
@@ -168,6 +169,7 @@ const Home: NextPage = () => {
             title="Download my resume"
             target="_blank"
             content="Download my resume"
+            key="download"
           />
         </section>
 
@@ -179,25 +181,28 @@ const Home: NextPage = () => {
               target="_blank"
               title="Link to Email"
               content="Email"
+              key="email"
             />
-            =
             <AnchorLink
               href="https://twitter.com/BradDoesCoding"
               target="_blank"
               title="Link to Twitter"
               content="Twitter"
+              key="twitter"
             />
             <AnchorLink
               href="https://www.linkedin.com/in/brad-preston/"
               target="_blank"
               title="Link to LinkedIn"
               content="Linkedin"
+              key="linkedin"
             />
             <AnchorLink
               href="https://github.com/BradPreston"
               target="_blank"
               title="Link to GitHub"
               content="GitHub"
+              key="github"
             />
           </div>
         </section>

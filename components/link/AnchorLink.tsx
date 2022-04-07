@@ -14,13 +14,19 @@ const AnchorLink = ({
     <>
       {next ? (
         <Link href={href}>
-          <a title={title} className={styles.link}>
+          <a title={title} className={styles.link} key={title}>
             {content}
             {children}
           </a>
         </Link>
       ) : (
-        <a href={href} title={title} target={target} className={styles.link}>
+        <a
+          href={href}
+          title={title}
+          target={target}
+          className={styles.link}
+          key={title}
+        >
           {content}
         </a>
       )}
