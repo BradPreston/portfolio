@@ -20,9 +20,9 @@ const Projects: Project[] = [
     name: 'Parrot Distro',
     link: 'https://parrotdistro.com',
     bio: 'Parrot Distro is a distribution company based in Kalamazoo, MI. The goal is to assist bands, labels, and artists of all sizes to sell their merch online.',
-    part: 'I assisted in setting up the store and built some custom pages/components',
+    part: 'I assisted in setting up the store and built some custom pages/components.',
     challenges:
-      "Repurposing the brand page to be an artists page wasn't as straight forward as initially planned. Getting is set up to scale and match any growth Parrot distro sees was a crucial step that was built with some custom JavaScript",
+      "Repurposing the brand page to be an artists page wasn't as straight forward as initially planned. Getting is set up to scale and match any growth Parrot distro sees was a crucial step that was built with some custom JavaScript.",
     stack: [
       'Stencil',
       'Handlebars',
@@ -39,7 +39,7 @@ const Projects: Project[] = [
     name: "Aaron's Music Service",
     link: 'https://aaronsmusicservice.com',
     bio: "Aaron's Music Service is a music store in Vicksburg, MI who builds, repairs, and consigns stringed instruments. They're a family owned business since 1983, when the Gibson factory moved to Nashville.",
-    part: 'I deisgned, developed, and hosted this site',
+    part: 'I deisgned, developed, and hosted this site.',
     challenges:
       'This was my first attempt at Svelte. I was curious about Svelte and figured that this simple site would be a perfect chance to build with it.',
     stack: ['Svelte', 'HTML', 'CSS', 'Render'],
