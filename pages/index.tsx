@@ -115,7 +115,7 @@ const Home: NextPage = () => {
               return (
                 <PortfolioProject
                   name={project.name}
-                  link={`/${project.name.replace(/\s+/g, '-')}`}
+                  link={`/${project.slug}`}
                   image={project.image}
                   key={project.name}
                 />

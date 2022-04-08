@@ -1,7 +1,7 @@
 import Project from '../../interfaces/Project';
 import Kazoo48 from '../../public/images/kazoo48.png';
 import ParrotDistro from '../../public/images/parrot-distro.png';
-import AMS from '../../public/images/ams.png';
+import Ams from '../../public/images/ams.png';
 
 const Projects: Project[] = [
   {
@@ -12,7 +12,9 @@ const Projects: Project[] = [
     challenges:
       'This was my first attempt at using Stripe. Learning how to use Stripe Checkout proved to be difficult at first, but after reading the docs and watching a few tutorials, I was able to get it up and running.',
     stack: ['Next JS', 'SASS', 'TypeScript', 'Stripe', 'Vercel'],
-    image: Kazoo48
+    image: Kazoo48,
+    key: 'aek83j',
+    slug: 'kazoo48'
   },
   {
     name: 'Parrot Distro',
@@ -29,7 +31,9 @@ const Projects: Project[] = [
       'JavaScript',
       'BigCommerce'
     ],
-    image: ParrotDistro
+    image: ParrotDistro,
+    key: 'dhwe93',
+    slug: 'parrot-distro'
   },
   {
     name: "Aaron's Music Service",
@@ -39,7 +43,9 @@ const Projects: Project[] = [
     challenges:
       'This was my first attempt at Svelte. I was curious about Svelte and figured that this simple site would be a perfect chance to build with it.',
     stack: ['Svelte', 'HTML', 'CSS', 'Render'],
-    image: AMS
+    image: Ams,
+    key: 'ot2b0w',
+    slug: 'aarons-music-service'
   }
 ];
 

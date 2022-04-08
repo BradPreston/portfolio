@@ -1,6 +1,5 @@
 import Project from '../../interfaces/Project';
 import Image from 'next/image';
-import Link from 'next/link';
 import styles from './Project.module.scss';
 import AnchorLink from '../link/AnchorLink';
 import { useEffect } from 'react';

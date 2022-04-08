@@ -2,7 +2,6 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Head from 'next/head';
-import Link from 'next/link';
 import Projects from '../components/portfolio/Projects';
 import styles from '../styles/Project.module.scss';
 import AnchorLink from '../components/link/AnchorLink';
@@ -13,9 +12,9 @@ const ProjectPage = () => {
   return (
     <div className={styles.container}>
       {Projects.map(project => {
-        if (project.name.replace(/-/g, ' ') == projectId)
+        if (project.slug == projectId)
           return (
-            <main className={styles.project}>
+            <main className={styles.project} key={project.key}>
               <Head>
                 <title>{project.name} | Brad Preston</title>
                 <meta name="description" content={project.bio} />

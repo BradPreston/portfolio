@@ -10,6 +10,8 @@ interface Project {
   part?: string;
   challenges?: string;
   style?: string;
+  key: string;
+  slug?: string;
 }
 
 export default Project;
