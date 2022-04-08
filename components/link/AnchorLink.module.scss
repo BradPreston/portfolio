@@ -17,4 +17,9 @@
   &:not(:last-child) {
     margin-right: 15px;
   }
+
+  &:active {
+    background: transparent;
+    color: #d5635a;
+  }
 }
