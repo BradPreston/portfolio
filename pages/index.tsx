@@ -149,6 +149,7 @@ const Home: NextPage = () => {
                 <li key="next">Next JS</li>
                 <li key="typescript">TypeScript</li>
                 <li key="sass">Sass</li>
+                <li key="graph">GraphQL</li>
                 <li key="mongodb">MongoDB</li>
               </ul>
             </div>
@@ -158,6 +159,7 @@ const Home: NextPage = () => {
                 <li key="react">React</li>
                 <li key="svelte">Svelte</li>
                 <li key="express">Express JS</li>
+                <li key="rest">REST API</li>
                 <li key="node">Node JS</li>
                 <li key="php">PHP</li>
                 <li key="laravel">Laravel</li>

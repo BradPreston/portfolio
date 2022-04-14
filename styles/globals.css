@@ -20,7 +20,7 @@ body {
 .stickyHeader {
   position: sticky;
   top: 0;
-  border-bottom: 1px solid #cba72f;
+  border-bottom: 2px solid #cba72f;
 }
 
 .headerBackground {
