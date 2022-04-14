@@ -20,7 +20,24 @@ body {
 .stickyHeader {
   position: sticky;
   top: 0;
-  border-bottom: 2px solid #cba72f;
+  border-bottom-color: #cba72f;
+  border-bottom-style: solid;
+  animation-name: scrollBorder;
+  animation-duration: 0.1s;
+}
+
+@keyframes scrollBorder {
+  0% {
+    border-bottom-width: 0;
+  }
+
+  50% {
+    border-bottom-width: 1px;
+  }
+
+  100% {
+    border-bottom-width: 2px;
+  }
 }
 
 .headerBackground {
